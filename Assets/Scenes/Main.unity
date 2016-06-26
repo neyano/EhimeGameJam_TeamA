@@ -330,7 +330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 355016825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb5271175d63745fb829087a11932261, type: 3}
+  m_Script: {fileID: 11500000, guid: f70ae9ce0f9d94862b7fc919e4770561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnChangeToTitle:
@@ -426,6 +426,7 @@ MonoBehaviour:
   - {fileID: 1452641874}
   - {fileID: 1338106684}
   CompletedImage: {fileID: 262239407}
+  ShipPartsImageMadeByBary: []
 --- !u!4 &355016827
 Transform:
   m_ObjectHideFlags: 0
@@ -465,6 +466,7 @@ GameObject:
   - 222: {fileID: 408408963}
   - 114: {fileID: 408408962}
   - 114: {fileID: 408408961}
+  - 114: {fileID: 408408964}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -529,7 +531,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 408408962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 408408964}
+        m_MethodName: Press
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &408408962
@@ -565,6 +578,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408408959}
+--- !u!114 &408408964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408408959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abfe704d00eb427d9685e5a36bd61da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483907798
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +723,7 @@ GameObject:
   - 222: {fileID: 1077606785}
   - 114: {fileID: 1077606784}
   - 114: {fileID: 1077606783}
+  - 114: {fileID: 1077606786}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -799,6 +824,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077606781}
+--- !u!114 &1077606786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077606781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abfe704d00eb427d9685e5a36bd61da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1198289756
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +846,7 @@ GameObject:
   - 222: {fileID: 1198289760}
   - 114: {fileID: 1198289759}
   - 114: {fileID: 1198289758}
+  - 114: {fileID: 1198289761}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -910,6 +947,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1198289756}
+--- !u!114 &1198289761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198289756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abfe704d00eb427d9685e5a36bd61da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1338106682
 GameObject:
   m_ObjectHideFlags: 0
