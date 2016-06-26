@@ -217,68 +217,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &464301417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 464301420}
-  - 114: {fileID: 464301419}
-  - 114: {fileID: 464301418}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &464301418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 464301417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &464301419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 464301417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 5
---- !u!4 &464301420
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 464301417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &702738874
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +494,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 50
+      scalar: 90
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2106,7 +2044,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702738874}
   m_LocalRotation: {x: -0.7257573, y: -0.10511877, z: 0.1154367, w: 0.6700007}
-  m_LocalPosition: {x: 753, y: 86, z: -10}
+  m_LocalPosition: {x: 777.2, y: 94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2170,7 +2108,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2188,7 +2126,7 @@ Canvas:
   m_GameObject: {fileID: 711372014}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 954636338}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2482,6 +2420,7 @@ GameObject:
   - 222: {fileID: 1080739491}
   - 114: {fileID: 1080739490}
   - 114: {fileID: 1080739489}
+  - 95: {fileID: 1080739492}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2505,8 +2444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 303, y: 196}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 304, y: 187}
+  m_SizeDelta: {x: 190, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080739489
 MonoBehaviour:
@@ -2579,8 +2518,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 508ea928c42a8e3439a7938de41ab34b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2593,6 +2532,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1080739487}
+--- !u!95 &1080739492
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080739487}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f50621ce71462d6428105450e25390d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1179324333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,7 +2708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2762,7 +2718,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 21
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -2772,7 +2728,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Team \u5BAE\u7530\u8FB2\u5712\n\nMember:\n\u3000\u30FB\n\u3000\u30FB\n\u3000\u30FB\n\u3000\u30FB\n\u3000\u30FB\n\u3000\u30FB\n\n\u7D20\u6750\u63D0\u4F9B\uFF1A\n\u3000\u30FBBGM\uFF1A\u30D5\u30EA\u30FC\u97F3\u697D\u7D20\u6750
+  m_Text: "Team \u5BAE\u7530\u8FB2\u5712\n\nMember:\n\u3000\u30FB\u938C\u7530\n\u3000\u30FB\u3058\u3085\u3093\u307A\u3044\n\u3000\u30FB\u5C71\u4E2D\n\u3000\u30FB\u4E95\u4E0B\n\u3000\u30FBZeke\n\u3000\u30FB\u304B\u3075\u3046\n\n\u7D20\u6750\u63D0\u4F9B\uFF1A\n\u3000\u30FBBGM\uFF1A\u30D5\u30EA\u30FC\u97F3\u697D\u7D20\u6750
     Senses Circuit\n\u3000\u3000http://www.senses-circuit.com/\n\u3000\n\u3000\u30FBSE:
     \u30D5\u30EA\u30FC\u52B9\u679C\u97F3\u7D20\u6750 \u304F\u3089\u3052\u5DE5\u5320\n
     \     http://www.kurage-kosho.info/\n\n\u3000\u30FBSE: Casual Game SFX Pack\n
@@ -2834,7 +2790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b2d1a73850ce44f91fe94b21eaff2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   spriteCount: 1
   start: 0
   end: 1100
@@ -2918,15 +2874,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5137255, g: 0.5137255, b: 0.5137255, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 83302f899152546e98d134da2d9d0d16, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3155,8 +3111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 304, y: -146}
-  m_SizeDelta: {x: 130, y: 149}
+  m_AnchoredPosition: {x: 308, y: -153}
+  m_SizeDelta: {x: 138, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554516953
 MonoBehaviour:
@@ -3177,7 +3133,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 052055afef1c63446865e0349290420d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 45cc1231464b55043a450aa5eaf88db1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3339,10 +3295,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3350,7 +3306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Return Title
+  m_Text: "\u30BF\u30A4\u30C8\u30EB\u3078\u623B\u308B"
 --- !u!222 &1654963003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3668,7 +3624,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
